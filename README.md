@@ -102,7 +102,20 @@ cd sektor
 pip install -r requirements.txt
 ```
 
-### Adım 3: Veri Setini Hazırlayın
+### Adım 3: Önceden Eğitilmiş Modeli İndirin
+
+**Model dosyasını GitHub Releases'tan indirin:**
+
+1. [Releases sayfasına](https://github.com/BasarBurakUnal/vehicle-classifier/releases) gidin
+2. En son release'i açın (v1.0.0)
+3. **Assets** bölümünden `best_vehicle_classifier.pth` dosyasını indirin
+4. İndirdiğiniz dosyayı `models/` klasörüne kopyalayın
+
+**Artık uygulamayı direkt çalıştırabilirsiniz!** 🎉
+
+### Adım 4 (Opsiyonel): Veri Setini Hazırlayın
+
+⚠️ **Not:** Model zaten eğitilmiş durumda. Bu adım **sadece modeli yeniden eğitmek isterseniz** gereklidir.
 
 1. Kaggle'dan veri setini indirin: [Vehicle Classification Dataset](https://www.kaggle.com/datasets/mohamedmaher5/vehicle-classification)
 2. İndirilen dosyayı projenin ana dizinine çıkarın
@@ -137,9 +150,29 @@ unzip vehicle-classification.zip
 
 ## 💻 Kullanım
 
-### 1. Model Eğitimi
+### Hızlı Başlangıç (Önceden Eğitilmiş Model ile)
 
-Modeli eğitmek için:
+Model dosyasını [Releases'tan](https://github.com/BasarBurakUnal/vehicle-classifier/releases) indirdikten sonra direkt çalıştırın:
+
+```bash
+streamlit run app.py
+```
+
+Tarayıcınızda otomatik olarak `http://localhost:8501` açılacaktır.
+
+### Komut Satırından Tek Görüntü Tahmini
+
+```bash
+python classifier.py path/to/image.jpg
+```
+
+---
+
+### Alternatif: Modeli Sıfırdan Eğitin (Opsiyonel)
+
+Eğer kendi modelinizi eğitmek isterseniz:
+
+**1. Model Eğitimi:**
 
 ```bash
 python train.py
@@ -151,7 +184,7 @@ Bu komut:
 - En iyi modeli `models/best_vehicle_classifier.pth` olarak kaydeder
 - Eğitim grafiklerini `training_history.png` olarak oluşturur
 
-### 2. Web Arayüzünü Başlatın
+**2. Web Arayüzünü Başlatın:**
 
 ```bash
 streamlit run app.py
@@ -159,7 +192,7 @@ streamlit run app.py
 
 Tarayıcınızda otomatik olarak `http://localhost:8501` açılacaktır.
 
-### 3. Komut Satırından Tek Görüntü Tahmini
+**3. Komut Satırından Tek Görüntü Tahmini:**
 
 ```bash
 python classifier.py path/to/image.jpg
