@@ -47,9 +47,9 @@ wheels/
 Thumbs.db
 *.log
 
-# Model dosyaları - Sadece vehicle_classifier.pth ignore et
-models/vehicle_classifier.pth
-# best_vehicle_classifier.pth GitHub'a yüklenecek (kullanıcılar için)
+# Model dosyaları - Releases'ta sunulacak
+models/*.pth
+models/*.pt
 
 # Geçici dosyalar
 temp_image.jpg

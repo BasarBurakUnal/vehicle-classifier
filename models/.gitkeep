@@ -2,15 +2,18 @@
 
 Bu klasörde eğitilmiş model dosyaları saklanır.
 
-## 📂 Model Dosyası
+## 📥 Model İndirme
 
-✅ **`best_vehicle_classifier.pth`** - Önceden eğitilmiş model (kullanıma hazır!)
+**Önceden eğitilmiş modeli indirin:**
 
-Bu model ResNet18 transfer learning ile eğitilmiştir ve ~92-95% accuracy'ye sahiptir.
+1. [Releases sayfasına](https://github.com/KULLANICI_ADINIZ/vehicle-classifier/releases) gidin
+2. En son release'i açın
+3. **Assets** bölümünden `best_vehicle_classifier.pth` dosyasını indirin
+4. İndirdiğiniz dosyayı bu klasöre (`models/`) kopyalayın
 
 ## 🚀 Kullanım
 
-Model zaten mevcut, direkt çalıştırabilirsiniz:
+Model indirdikten sonra direkt çalıştırabilirsiniz:
 
 ```bash
 streamlit run app.py
@@ -22,4 +25,4 @@ streamlit run app.py
 python train.py
 ```
 
-Yeni eğitilen model otomatik olarak `best_vehicle_classifier.pth` dosyasını güncelleyecektir.
+Yeni eğitilen model otomatik olarak `best_vehicle_classifier.pth` olarak bu klasöre kaydedilecektir.
