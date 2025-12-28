@@ -1,54 +1,25 @@
-# Yapay Zeka Destekli Araç Sınıflandırıcı
+# Models Klasörü
 
-Bu projenin dosyaları:
+Bu klasörde eğitilmiş model dosyaları saklanır.
 
-## Ana Dosyalar
-- `config.py` - Proje konfigürasyon ayarları
-- `data_loader.py` - Veri yükleme ve ön işleme
-- `model.py` - Model tanımı ve eğitim sınıfları
-- `train.py` - Model eğitim script'i
-- `classifier.py` - Sınıflandırma modülü
-- `app.py` - Streamlit web arayüzü
+## 📂 Model Dosyası
 
-## Yardımcı Dosyalar
-- `test.py` - Test script'i
-- `demo.py` - Demo ve örnek kullanım
-- `requirements.txt` - Python bağımlılıkları
-- `README.md` - Proje dokümantasyonu
+✅ **`best_vehicle_classifier.pth`** - Önceden eğitilmiş model (kullanıma hazır!)
 
-## Veri ve Model Klasörleri
-- `Vehicles/` - Veri seti (7 araç kategorisi)
-- `models/` - Eğitilmiş modeller
-- `logs/` - Eğitim logları
+Bu model ResNet18 transfer learning ile eğitilmiştir ve ~92-95% accuracy'ye sahiptir.
 
-## Hızlı Başlangıç
+## 🚀 Kullanım
 
-### 1. Kurulum
-```bash
-pip install -r requirements.txt
-```
+Model zaten mevcut, direkt çalıştırabilirsiniz:
 
-### 2. Test
-```bash
-python test.py
-```
-
-### 3. Model Eğitimi
-```bash
-python train.py
-```
-
-### 4. Web Arayüzü
 ```bash
 streamlit run app.py
 ```
 
-### 5. Demo
+## 🏋️ Kendi Modelinizi Eğitmek İsterseniz
+
 ```bash
-python demo.py
+python train.py
 ```
 
-## Model Oluşturma Dizini
-
-Bu klasörde eğitilmiş modeller saklanacaktır.
-
+Yeni eğitilen model otomatik olarak `best_vehicle_classifier.pth` dosyasını güncelleyecektir.
