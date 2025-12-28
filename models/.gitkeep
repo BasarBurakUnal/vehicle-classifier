@@ -6,7 +6,7 @@ Bu klasörde eğitilmiş model dosyaları saklanır.
 
 **Önceden eğitilmiş modeli indirin:**
 
-1. [Releases sayfasına](https://github.com/KULLANICI_ADINIZ/vehicle-classifier/releases) gidin
+1. [Releases sayfasına](https://github.com/BasarBurakUnal/vehicle-classifier/releases) gidin
 2. En son release'i açın
 3. **Assets** bölümünden `best_vehicle_classifier.pth` dosyasını indirin
 4. İndirdiğiniz dosyayı bu klasöre (`models/`) kopyalayın
