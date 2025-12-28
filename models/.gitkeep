@@ -1,0 +1,54 @@
+# Yapay Zeka Destekli Araç Sınıflandırıcı
+
+Bu projenin dosyaları:
+
+## Ana Dosyalar
+- `config.py` - Proje konfigürasyon ayarları
+- `data_loader.py` - Veri yükleme ve ön işleme
+- `model.py` - Model tanımı ve eğitim sınıfları
+- `train.py` - Model eğitim script'i
+- `classifier.py` - Sınıflandırma modülü
+- `app.py` - Streamlit web arayüzü
+
+## Yardımcı Dosyalar
+- `test.py` - Test script'i
+- `demo.py` - Demo ve örnek kullanım
+- `requirements.txt` - Python bağımlılıkları
+- `README.md` - Proje dokümantasyonu
+
+## Veri ve Model Klasörleri
+- `Vehicles/` - Veri seti (7 araç kategorisi)
+- `models/` - Eğitilmiş modeller
+- `logs/` - Eğitim logları
+
+## Hızlı Başlangıç
+
+### 1. Kurulum
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Test
+```bash
+python test.py
+```
+
+### 3. Model Eğitimi
+```bash
+python train.py
+```
+
+### 4. Web Arayüzü
+```bash
+streamlit run app.py
+```
+
+### 5. Demo
+```bash
+python demo.py
+```
+
+## Model Oluşturma Dizini
+
+Bu klasörde eğitilmiş modeller saklanacaktır.
+
