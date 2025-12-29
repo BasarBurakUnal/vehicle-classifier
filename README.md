@@ -270,7 +270,7 @@ Model eğitim sonuçları:
 
 - **Test Accuracy:** ~92-95% (ResNet18 transfer learning ile)
 - **Training Time:** Yaklaşık 60 dakika (GPU kullanımıyla)
-- **Model Boyutu:** ~44.7 MB
+- **Model Boyutu:** ~132.7 MB
 - **İnferans Süresi:** Görüntü başına ~50-100ms
 
 > Not: Model performansı eğitim parametrelerine ve veri kalitesine bağlı olarak değişiklik gösterebilir.
