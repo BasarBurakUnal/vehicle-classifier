@@ -92,8 +92,8 @@ Veri seti dengeli bir dağılıma sahiptir ve her sınıf için yeterli sayıda 
 ### Adım 1: Projeyi İndirin
 
 ```bash
-git clone <repository-url>
-cd sektor
+git clone https://github.com/BasarBurakUnal/vehicle-classifier.git
+cd vehicle-classifier
 ```
 
 ### Adım 2: Gerekli Paketleri Yükleyin
